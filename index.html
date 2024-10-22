@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Party Planner</title>
     <link href="index.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <h1>List of Party</h1>
+    <div>
+        <form id="addParty">
+            <label>Name :</label>
+            <input type="text" name="name" id="partyname">
+
+            <label>Description :</label>
+            <input type="text" name="description" id="description">
+
+            <label>Date :</label>
+            <input type="date" name="date" id="date">
+
+            <label>Time :</label>
+            <input type="datetime" name="time" id="time" >
+
+            <label>Location :</label>
+            <input type="text" name="location" id="location">
+
+            <button type="submit">Add Party</button>
+        </form>
+    </div>
+  
+    <div id="partyList"></div>
+   
     <script src="index.js"></script>
 </body>
+
 </html>
